@@ -44,6 +44,5 @@ class Game
     puts "Please #{player.name} choose in which place you would like to put your symbol"
     position = gets.chomp.to_i
     @board.update_board(position - 1, player.symbol)
-    @board.print_board
   end
 end
